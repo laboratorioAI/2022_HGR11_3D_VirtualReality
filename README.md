@@ -4,8 +4,16 @@
 En este trabajo, presentamos un sistema de interacción humano-ordenador (HCI) basado en gestos manuales en tiempo real para controlar una aplicación de realidad virtual que aplica la sincronización de Oculus Rift y el brazalete Myo. Para ello se implementó un modelo de reconocimiento de gestos de mano (HGR) y una aplicación de realidad virtual (VR).
 Los algoritmos K-Nearest Neighbors (KNN) y Dynamic Time Warping (DTW) se aplican para desarrollar el modelo HGR. Las entradas de este modelo son señales de 11 gestos con las manos medidos por Myo Armband y G-Force Pro utilizando sus sensores secos de electromiografía de superficie (EMG) incorporados y la unidad de medición inercial (IMU). La salida del modelo HGR es la etiqueta que identifica el gesto ejecutado por el usuario. La aplicación VR fue desarrollada por el motor de juego Unity utilizando Oculus Rift como dispositivo de entrada en el entorno virtual.
 Permite navegar sobre una interfaz y manipular objetos tridimensionales (3D) aprovechando sus propiedades para una experiencia sofisticada. El modelo HGR se utiliza en la aplicación VR donde cada gesto identificado realiza una acción. El sistema presenta una comunicación natural a través de gestos con las manos en un entorno informático sofisticado. El sistema fue evaluado en términos de tiempo de respuesta, precisión de clasificación (82%) y usabilidad mediante la Escala de Usabilidad del Sistema (SUS).
+
+
 ### Instalación de software y librerías
 Los archivos necesarios para la ejecución de la aplicación de realidad virtual se encuentran en la carpeta Instalador/VisorDeModelos3D.
+
+### Visor de Modelos 3D
+1. Manual de Usuario de la aplicación https://epnecuador-my.sharepoint.com/:b:/g/personal/laboratorio_ia_epn_edu_ec/EcOKDQH9BIlNuoDivXc2-d0B8uv91stS_8A9_5WOhFGhWg?e=PhKIEb
+2. Código fuente script Matlab ejecución de tareas mediante el uso del teclado https://epnecuador-my.sharepoint.com/:u:/g/personal/laboratorio_ia_epn_edu_ec/EccDwcOmJY9FlUUUcV62op8BO6cl7hMorMo81Tbpha7_jg?e=DqKNp1
+3. Manual de uso de la aplicación integrada con el modelo de reconocimiento de gestos https://epnecuador-my.sharepoint.com/:b:/g/personal/laboratorio_ia_epn_edu_ec/EUh1lZaddo1PvYMWWtuoaJQBmMm3kU9UhQDI4hBC2ZLwsA?e=rSkHBo
+
 
 #### Instalación del software Oculus Rift para las gafas de realidad virtual
 1. Visitar el enlace https://www.oculus.com/rift/setup/
@@ -26,6 +34,9 @@ Los archivos necesarios para la ejecución de la aplicación de realidad virtual
 6. Para instalar Oculus Integration SDK visitamos https://developer.oculus.com/downloads/package/unity-integration/ y descargar
 7. Finalizada la descarga desde Unity, importaremos el nuevo paquete y seleccionamos Oculus Integration SDK
 8. Reiniciamos el entorno de desarrollo Unity.
+
+
+### Modelo de reconocimiento de gestos
 
 #### Instalación del software Myo Connect Installer:
 1. Damos doble clic sobre el icono del Myo Connect Installer.
@@ -84,4 +95,6 @@ Los archivos necesarios para la ejecución de la aplicación de realidad virtual
 1. La figura A23 muestra las formas en la cuales se podría colocar el dispositivo al realizar el reconocimiento de los movimientos.
 ![image](https://user-images.githubusercontent.com/33075700/161843513-b098fa4f-3c8d-4ead-8a88-39ac3332d123.png)
 2. Si el reconocimiento se lo hace sin estar colocado en el antebrazo el Myo Armband tendrá la misma guía horizontal del brazo para la muestra inicial.
-3. 
+
+## Demostración
+Ambos componentes al ser instalados correctamente funcionan como se observa en https://www.youtube.com/watch?v=NQcEOSXeYqc
